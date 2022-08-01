@@ -1,16 +1,19 @@
 import React from "react";
-import Search from "./Search";
-import Sidebar from "./Sidebar";
+import RepCard from "./RepCard";
 
-function NoteContainer() {
+function RepContainer({ legislators }) {
   return (
-    <>
-      <Search />
-      <div className="container">
-        <Sidebar />
-      </div>
-    </>
+    <div className= "cards">
+      {
+        legislators.map((legislator) => (
+          <RepCard
+            key={legislator.id.bioguide}
+            legislator={legislator}
+          />
+        ))
+      }
+    </div>
   );
 }
 
-export default NoteContainer;
+export default RepContainer;

@@ -1,9 +1,10 @@
 import React from "react";
 
-function Search() {
+function Search({ handleSearch }) {
   return (
-    <div className="filter">
-      <input id="search-bar" type="text" placeholder="Search Officials" />
+    <div className="search">
+      <input className="searchTerm" type="text" placeholder="Search Official By Name" 
+      onChange={handleSearch} />
     </div>
   );
 }

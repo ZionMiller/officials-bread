@@ -2,12 +2,8 @@ import React from "react";
 
 function Header() {
   return (
-    <div className="nav-bar">
-      <ul>
-        <li className="nav-item">
-          <h2>Your App Title Goes Here</h2>
-        </li>
-      </ul>
+    <div className="main-header">
+     <h1>List of Elected Officials</h1>
     </div>
   );
 }
